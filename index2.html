@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let heightPedro = 1.50;
+        let heightLucas = 1.10;
+        let years = 0;
+
+        while (heightPedro.toFixed(2) >= heightLucas.toFixed(2)) {
+            heightPedro += 0.02;
+            heightLucas += 0.03;
+            years++;
+            if (heightLucas.toFixed(2) === heightPedro.toFixed(2)) {
+                console.log(`A altura de Pedro e Lucas são iguais, levou ${years} anos.`);
+            }
+        }
+
+        console.log(`Lucas é maior que Pedro, levou ${years} anos.`);
+    </script>
+</body>
+</html>
